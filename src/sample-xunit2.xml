@@ -1,37 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites disabled="0" errors="0" failures="0" name="SampleXunitName" tests="3" time="100">
+<testsuites disabled="0" errors="0" failures="0" name="SampleXunitName" tests="2" time="10">
     <testsuite name="SampleXunitName1" tests="2" disabled="0" failures="1" errors="0" hostname="hostname1" id="0" time="70" timestamp="2014-04-15T12:34:00"> 
         <properties>
             <property name="property1" value="property1value"/>
         </properties>
-        <testcase name="test1"
+        <testcase name="Test 1 - Redundancy reconnect"
             assertions="100"
-            classname="test-file-2/Test 1 - Redundancy"
-            status=""
-            time="30"
+            classname="sample-xunit2"
+            status="success"
+            time="3.100"
             >
             <system-out>STDOUT text</system-out>
             <system-err>STDERR text</system-err>
         </testcase>
-        <testcase name="test2"
+        <testcase name="Test 2 - Redundancy full"
             assertions="50"
-            classname="test-file-2/Test 1 - Redundancy"
-            status="failed"
-            time="40"
+            classname="sample-xunit2"
+            status="error"
+            time="6.900"
             >
-            <failure message="1 !== 2" type="equal">1 does not equal 2</failure>
-        </testcase>
-    </testsuite>
-    <testsuite name="SampleXunitName2" tests="1" disabled="0" failures="0" errors="0" hostname="hostname1" id="0" time="70" timestamp="2014-04-15T12:35:10"> 
-        <properties>
-            <property name="property1" value="property1value"/>
-        </properties>
-        <testcase name="test21"
-            assertions="100"
-            classname="test-file-2/Test 2 - Other stuff"
-            status=""
-            time="30"
-            >
+            <error message="1 !== 2" type="equal">Long error message
+            spanning
+            several lines</error>
         </testcase>
     </testsuite>
 </testsuites>
