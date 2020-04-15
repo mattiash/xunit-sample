@@ -6,7 +6,7 @@
         </properties>
         <testcase name="test1"
             assertions="100"
-            classname="test-file-1/Test 1 - Redundancy"
+            classname="test-file-2/Test 1 - Redundancy"
             status=""
             time="30"
             >
@@ -15,7 +15,7 @@
         </testcase>
         <testcase name="test2"
             assertions="50"
-            classname="test-file-1/Test 1 - Redundancy"
+            classname="test-file-2/Test 1 - Redundancy"
             status="failed"
             time="40"
             >
@@ -28,7 +28,7 @@
         </properties>
         <testcase name="test21"
             assertions="100"
-            classname="test-file-1/Test 2 - Other stuff"
+            classname="test-file-2/Test 2 - Other stuff"
             status=""
             time="30"
             >

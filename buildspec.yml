@@ -10,6 +10,7 @@ phases:
       - echo Running tests
       - mkdir results
       - cp src/sample-xunit.xml results/sample-xunit.xml
+      - cp src/sample-xunit2.xml results/sample-xunit2.xml
 
 reports:
   my-report-name:
