@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+
+  build:
+    commands:
+      - echo Running tests
+      - mkdir results
+      - cp src/sample-xunit.xml results/sample-xunit.xml
+
+reports:
+  my-report-name:
+    files:
+      - "results/sample-xunit.xml"
+    discard-paths: false
