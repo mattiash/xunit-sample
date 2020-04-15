@@ -16,4 +16,5 @@ reports:
   my-report-name:
     files:
       - "results/sample-xunit.xml"
+      - "results/sample-xunit2.xml"
     discard-paths: false
