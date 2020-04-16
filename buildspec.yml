@@ -9,12 +9,10 @@ phases:
     commands:
       - echo Running tests
       - mkdir results
-      - cp src/sample-xunit.xml results/sample-xunit.xml
-      - cp src/sample-xunit2.xml results/sample-xunit2.xml
+      - cp src/*.xml results/
 
 reports:
   my-report-name:
     files:
-      - "results/sample-xunit.xml"
-      - "results/sample-xunit2.xml"
+      - "results/*.xml"
     discard-paths: false
